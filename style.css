@@ -1,13 +1,18 @@
 .header{
+    padding: 2rem;
     text-align: center;
-    margin-top: 8rem;
+   margin-top: 6rem;
     margin-bottom: 2rem;
     font-size: 3rem;
     color: white;
 }
 
 .wrapper{
+    
     background-image: url(img/bg-img.jpg);
+    min-height: 30rem;
+    width: 80rem;
+    margin: auto;
 }
 
 .input-div{
@@ -28,6 +33,12 @@
     margin: 0.5rem auto 1rem auto;
 }
 
+.btn-calc:hover{
+    color: lightcoral;
+    font-weight: bolder;
+}
+
 .res{
     text-align: center;
+    color: white;
 }
