@@ -14,8 +14,11 @@ function checkPL(){
     var cost=cP.value;
     var curr=curP.value;
     var quan=q.value;
-    if(cost<0||curr<0||quan<0||cost==null||curr==null||quan==null){
+    if(cost<0||curr<0||quan<0){
         alert("Enter Positive values Only");
+    }
+    else if(cost==""||curr==""||quan==""){
+        alert("Fill all the input fields");
     }
     else{
     var diff=curr-cost;
