@@ -3,7 +3,13 @@
     margin-top: 8rem;
     margin-bottom: 2rem;
     font-size: 3rem;
+    color: white;
 }
+
+.wrapper{
+    background-image: url(img/bg-img.jpg);
+}
+
 .input-div{
     display: flex;
     flex-direction: column;

@@ -10,10 +10,14 @@ var curr;
 var quan;
 
 function checkPL(){
+    
     var cost=cP.value;
     var curr=curP.value;
     var quan=q.value;
-
+    if(cost<0||curr<0||quan<0){
+        alert("Enter Positive values Only");
+    }
+    else{
     var diff=curr-cost;
     var pl=diff*quan;
     var per=diff*100/cost;
@@ -27,4 +31,6 @@ function checkPL(){
     if(diff==0){
         profitloss.innerHTML="No Profit , No Loss.";
     }
+}
+
 }
