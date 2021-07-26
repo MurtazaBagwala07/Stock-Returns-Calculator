@@ -14,9 +14,9 @@
         Check Profit or Loss on your Stocks
     </div>
     <div class="input-div"> 
-        <input required="required" class="input" id="costPrice"  type="number" placeholder="Enter Cost Price Of stock">
-        <input class="input" id="quantity"  type="number" placeholder="Enter Cost quantity Of stock">
-        <input class="input" id="currentPrice"  type="number" placeholder="Enter Cost Current Price Of stock">
+        <input required="required" class="input" min="1" id="costPrice"  type="number" placeholder="Enter Cost Price Of stock">
+        <input class="input" id="quantity" min="1" type="number" placeholder="Enter Cost quantity Of stock">
+        <input class="input" id="currentPrice" min="0" type="number" placeholder="Enter Cost Current Price Of stock">
         <button class="btn-calc" id="calc" onclick="checkPL()">Calculate</button>
     </div>
     <div >

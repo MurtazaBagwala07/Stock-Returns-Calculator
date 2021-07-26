@@ -26,10 +26,10 @@ function checkPL(){
     var per=diff*100/cost;
 
     if(diff>0){
-        profitloss.innerHTML="You Gained : "+per.toFixed(2)+"%. Your total profit is : "+ pl+".";
+        profitloss.innerHTML="You Gained : "+per.toFixed(2)+"%. Your total profit is : ₹"+ pl+".";
     }
     if(diff<0){
-        profitloss.innerHTML="You Lost : "+Math.abs(per.toFixed(2))+"%. Your total loss is : "+ Math.abs(pl)+".";
+        profitloss.innerHTML="You Lost : "+Math.abs(per.toFixed(2))+"%. Your total loss is : ₹"+ Math.abs(pl)+".";
     }
     if(diff==0){
         profitloss.innerHTML="No Profit , No Loss.";
