@@ -1,6 +1,7 @@
 var cP=document.querySelector("#costPrice");
 var q=document.querySelector("#quantity");
 var curP=document.querySelector("#currentPrice");
+var bg=document.querySelector(".wrapper");
 
 var profitloss=document.querySelector("#pro");
 
@@ -33,6 +34,12 @@ function checkPL(){
     }
     if(diff==0){
         profitloss.innerHTML="No Profit , No Loss.";
+    }
+    if(per>50){
+        bg.style.backgroundImage = "url('img/confetti.gif')";
+    }
+    if(per<-50){
+        bg.style.backgroundImage = "url('img/loss.gif')";
     }
 }
 
