@@ -51,5 +51,7 @@
 
 .res{
     text-align: center;
-    color: white;
+    color: lightcoral;
+    font-weight: bolder;
+    font-size: 2rem;
 }

@@ -37,6 +37,7 @@ function checkPL(){
     }
     if(per>50){
         bg.style.backgroundImage = "url('img/confetti.gif')";
+        
     }
     if(per<-50){
         bg.style.backgroundImage = "url('img/loss.gif')";
