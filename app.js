@@ -28,20 +28,31 @@ function checkPL(){
 
     if(diff>0){
         profitloss.innerHTML="You Gained : "+per.toFixed(2)+"%. Your total profit is : ₹"+ pl+".";
+        profitloss.style.color="green";
+        profitloss.style.backgroundColor="white";
     }
     if(diff<0){
         profitloss.innerHTML="You Lost : "+Math.abs(per.toFixed(2))+"%. Your total loss is : ₹"+ Math.abs(pl)+".";
+        profitloss.style.color="red";
+        profitloss.style.backgroundColor="white";
     }
     if(diff==0){
         profitloss.innerHTML="No Profit , No Loss.";
+        profitloss.style.color="black";
+        profitloss.style.backgroundColor="white";
     }
-    if(per>50){
+    
+    if(per<50&&per>-50){
+        bg.style.backgroundImage = "url('img/bg-img.jpg')";
+    }
+
+    if(per>=50){
         bg.style.backgroundImage = "url('img/confetti.gif')";
-        
     }
-    if(per<-50){
+    else if(per<=-50){
         bg.style.backgroundImage = "url('img/loss.gif')";
     }
+    
 }
 
 }
